@@ -1,0 +1,369 @@
+
+@startuml
+left to right direction
+
+
+skinparam {
+    componentStyle rectangle
+    RoundCorner 8
+    titleBorderRoundCorner 8
+    titleBorderThickness 2
+    titleBorderColor grey
+    titleBackgroundColor #eeeeee
+    titleFontSize	28
+    NoteFontName monospaced
+    NoteFontStyle normal
+    NoteBackgroundColor #eeeeee
+    NoteBorderColor #grey
+    NoteFontColor #grey
+    NoteFontSize 6
+    NoteShadowing true
+    DPI 200
+    Shadowing false
+    DefaultFontName Roboto Condensed
+    DefaultMonospacedFontName Inconsolata
+    InterfaceBackgroundColor #ee1111
+    ArrowColor #111111
+    defaultFontSize 10
+    legendBackgroundColor #ffffff
+}
+
+footer Jan 29, 2025 3:50:56 PM
+
+
+
+' tunnels
+[Tunnel #0\nGroovy Training <U+0028>System Party<U+0029>] as dYn7TV54ToO99zgRahGp7w1_tunnel #93c47d
+[Tunnel #1\nGroovy Training Helper  <U+0028>System Party<U+0029>] as JeknivV6SGSWHmXZVCPsKQ_tunnel #93c47d
+' interfaces
+[EntryPoint:\nGroovy Training <U+0028>System Party<U+0029>] as Uz3NogDXRyeaSfpjeovj5g_entrypoint #eeeeff
+[EntryPoint:\nGroovy Training INVM <U+0028>System Party<U+0029>] as b6gpn22lQS6m9wHZ9IwfOQ2_entrypoint #ccccff
+[ExitPoint:\nGeneric LoopBack ExitPoint] as EXPN000000000000000001_exitpoint #ccccff
+[ExitPoint:\nGroovy Training address Mock  <U+0028>System Party<U+0029>] as vPw3B7o8Qy2dGiyeWp8MmQ1_exitpoint #eeeeff
+[ExitPoint:\nGroovy Training Helper  <U+0028>System Party<U+0029>] as R23IYfxwRAWQ8nFcoRoDqg_exitpoint #ccccff
+[EntryPoint:\nGroovy Training Helper  <U+0028>System Party<U+0029>] as XOwwfe0bQfObKN1sxWYMww_entrypoint #ccccff
+' deliverypoints
+[DeliveryPoint #0] as u2b9ztgMQXarD5jIFDocYg_deliverypoint #ccccff
+[DeliveryPoint #0] as CDNsi4inSweB6Q82cAPoRA_deliverypoint #ccccff
+' response profiles
+[Verzoekprofiel:\nGroovy Training Profile <U+0028>System Party<U+0029>] as pYqmPu80SViKKd4rfdPy6w1_profile
+' expressions
+[Expression:\ntunnelvar:<U+002F><U+002F>action == groovy12] as kF7lkphJSbGWd2Tf8h2KjA3_expr #dddddd
+[Expression:\ntunnelvar:<U+002F><U+002F>action == groovy13] as CIvK1a2FQ2avFYtwWGl4fw_expr #dddddd
+[Expression:\ntunnelvar:<U+002F><U+002F>action == groovy14] as QLEGve7OTQSY9psijPCFWw_expr #dddddd
+[Expression:\ntunnelvar:<U+002F><U+002F>action == groovy15] as Ks1bV7HJS7GI2gZqqjsFJg_expr #dddddd
+[Expression:\ntunnelvar:<U+002F><U+002F>action == groovy16] as yEdLKd3lR8qfvupi6l07Ow2_expr #dddddd
+[Expression:\ntunnelvar:<U+002F><U+002F>action == none] as JLIyU5gwRSeK3oIo2a2wQQ2_expr #dddddd
+' message transformers
+[BerichtTransformatie:\nGroovy Training 12_OT_runtime_variables <U+0028>System Party<U+0029>] as vH318SYbRU2WaQ6J9r2rag2_transformation
+[BerichtTransformatie:\nGroovy Training 13_OT_transformer_variables <U+0028>System Party<U+0029>] as kRkhpenARnmkGYPbHk4EQQ_transformation
+[BerichtTransformatie:\nGroovy Training 14_OT_payload <U+0028>System Party<U+0029>] as p3TTAgUKRCy36vLpIXXLXQ_transformation
+[BerichtTransformatie:\nGroovy Training 15_OT_dependency <U+0028>System Party<U+0029>] as 6AxyD5uhQ2eKDyDePUunuA1_transformation
+[BerichtTransformatie:\nGroovy Training 16_OT_helpers <U+0028>System Party<U+0029>] as XJxTColqRkGuMaEgtUxepA_transformation
+[BerichtTransformatie:\nGroovy Training invalid action <U+0028>System Party<U+0029>] as a6XNHuCNQSmh9Cd7i3jhdA_transformation
+' function nodes
+' notes
+note left of dYn7TV54ToO99zgRahGp7w1_tunnel
+Tunnel #0
+| code | dYn7TV54ToO99zgRahGp7w1 |
+| modifiable | true |
+| party-ref | SYS00000000000000001 - SYS00000000000000001 |
+
+.. **Common** ..
+| audit-retention-fault | 4320days 15552000seconds |
+| audit-retention | 12days 43200seconds |
+| collect-proc-vars | false |
+| collect-stats | true |
+| duplicate-elimination | false |
+| encrypt-audit | false |
+| name | Groovy Training (System Party) |
+| collect-reliable | false |
+| res-async | false |
+
+.. **Protocol settings** ..
+| ack-requested | false |
+| async | false |
+| delay-proc | 0 |
+| interval-proc | 0 |
+| number-of-retries | 1 |
+| resent-response | false |
+| retry-period | 0 |
+
+.. **Identification** ..
+| transport-params-or | true |
+
+.. **runtime_vars** ..
+|<#gainsboro><r>#|name|value|metrics|predefined|proces-field|
+|<#gainsboro><r> 1 | action | transport:<U+002F><U+002F>action?none |  | <#PowderBlue><r> |  |
+end note
+note left of Uz3NogDXRyeaSfpjeovj5g_entrypoint
+| code | Uz3NogDXRyeaSfpjeovj5g |
+| client-auth | N |
+| context-path | <U+002F>opentunnel<U+002F>SYS00000000000000001<U+002F>groovy |
+| crl-check | false |
+| decrypt-message | false |
+| enabled | true |
+| expected-mime-type | application<U+002F>json |
+| host | ${nodeip} |
+| message-auth-required | false |
+| modifiable | true |
+| name | Groovy Training (System Party) |
+| party-ref | SYS00000000000000001 - SYS00000000000000001 |
+| port | 9443 |
+| protocol | HTTPS |
+| server-cert-ref | 00000000000000000000-0000000000 |
+| token-auth | false |
+| transport-auth-required | false |
+
+end note
+note left of b6gpn22lQS6m9wHZ9IwfOQ2_entrypoint
+| code | b6gpn22lQS6m9wHZ9IwfOQ2 |
+| client-auth | N |
+| context-path | opentunnel.b6gpn22lQS6m9wHZ9IwfOQ2 |
+| crl-check | false |
+| decrypt-message | false |
+| enabled | true |
+| expected-mime-type | application<U+002F>json |
+| message-auth-required | false |
+| modifiable | true |
+| name | Groovy Training INVM (System Party) |
+| party-ref | SYS00000000000000001 - SYS00000000000000001 |
+| port | 0 |
+| protocol | INVM |
+| token-auth | false |
+| transport-auth-required | false |
+
+end note
+note right of pYqmPu80SViKKd4rfdPy6w1_profile
+| code | pYqmPu80SViKKd4rfdPy6w1 |
+| embed-certificate | false |
+| encrypt | false |
+| modifiable | true |
+| name | Groovy Training Profile (System Party) |
+| party-ref | SYS00000000000000001 - SYS00000000000000001 |
+| remove-security-header | false |
+| sign | false |
+
+end note
+note right of vH318SYbRU2WaQ6J9r2rag2_transformation
+| code | vH318SYbRU2WaQ6J9r2rag2 |
+| classname | nl.jnc.gateway.message.ctrl.transform.GroovyTransformer |
+| copyrighted | false |
+| modifiable | true |
+| name | Groovy Training 12_OT_runtime_variables (System Party) |
+| party-ref | SYS00000000000000001 - SYS00000000000000001 |
+| target-mimetype | text<U+002F>plain |
+
+
+end note
+note left of EXPN000000000000000001_exitpoint
+| code | EXPN000000000000000001 |
+| context-path | loopback.generic |
+| enabled | true |
+| modifiable | true |
+| name | Generic LoopBack ExitPoint |
+| port | 0 |
+| propagate-mi-info | false |
+| protocol | INVM |
+| token-auth | false |
+
+end note
+note right of kRkhpenARnmkGYPbHk4EQQ_transformation
+| code | kRkhpenARnmkGYPbHk4EQQ |
+| classname | nl.jnc.gateway.message.ctrl.transform.GroovyTransformer |
+| copyrighted | false |
+| modifiable | true |
+| name | Groovy Training 13_OT_transformer_variables (System Party) |
+| party-ref | SYS00000000000000001 - SYS00000000000000001 |
+| target-mimetype | application<U+002F>json |
+.. **attributes** ..
+|<#gainsboro><r> 1 | variable_1 | const:<U+002F><U+002F>hello world |
+
+.. **dependencies** ..
+|<#gainsboro><r> ep1 | Exitpoint code:Generic LoopBack ExitPoint | EXPN000000000000000001 |
+
+end note
+note right of p3TTAgUKRCy36vLpIXXLXQ_transformation
+| code | p3TTAgUKRCy36vLpIXXLXQ |
+| classname | nl.jnc.gateway.message.ctrl.transform.GroovyTransformer |
+| copyrighted | false |
+| modifiable | true |
+| name | Groovy Training 14_OT_payload (System Party) |
+| party-ref | SYS00000000000000001 - SYS00000000000000001 |
+| target-mimetype | application<U+002F>json |
+
+
+end note
+note left of vPw3B7o8Qy2dGiyeWp8MmQ1_exitpoint
+| code | vPw3B7o8Qy2dGiyeWp8MmQ1 |
+| context-path | <U+002F>exitpoint |
+| enabled | true |
+| host | host.docker.internal |
+| modifiable | true |
+| name | Groovy Training address Mock  (System Party) |
+| party-ref | SYS00000000000000001 - SYS00000000000000001 |
+| port | 3003 |
+| propagate-mi-info | false |
+| protocol | HTTP |
+| token-auth | false |
+
+.. **attributes** ..
+| 1 | action | transport:<U+002F><U+002F>action |
+| 2 | content-type | const:<U+002F><U+002F>application<U+002F>json |
+end note
+note right of 6AxyD5uhQ2eKDyDePUunuA1_transformation
+| code | 6AxyD5uhQ2eKDyDePUunuA1 |
+| classname | nl.jnc.gateway.message.ctrl.transform.GroovyTransformer |
+| copyrighted | false |
+| modifiable | true |
+| name | Groovy Training 15_OT_dependency (System Party) |
+| party-ref | SYS00000000000000001 - SYS00000000000000001 |
+| target-contenttype | application<U+002F>json |
+| target-mimetype | application<U+002F>json |
+
+.. **dependencies** ..
+|<#gainsboro><r> HELPER_EXITPOINT | Exitpoint code:Groovy Training address Mock  (System Party) | vPw3B7o8Qy2dGiyeWp8MmQ1 |
+
+end note
+note left of R23IYfxwRAWQ8nFcoRoDqg_exitpoint
+| code | R23IYfxwRAWQ8nFcoRoDqg |
+| enabled | true |
+| invm-entry-point-ref | XOwwfe0bQfObKN1sxWYMww : Groovy Training Helper  (System Party) |
+| modifiable | true |
+| name | Groovy Training Helper  (System Party) |
+| party-ref | SYS00000000000000001 - SYS00000000000000001 |
+| port | 0 |
+| propagate-mi-info | true |
+| protocol | INVM |
+| token-auth | false |
+
+.. **properties** ..
+| copyMessageHeaders | true |
+end note
+note left of XOwwfe0bQfObKN1sxWYMww_entrypoint
+| code | XOwwfe0bQfObKN1sxWYMww |
+| client-auth | N |
+| context-path | opentunnel.XOwwfe0bQfObKN1sxWYMww |
+| crl-check | false |
+| decrypt-message | false |
+| enabled | true |
+| expected-mime-type | application<U+002F>json |
+| message-auth-required | false |
+| modifiable | true |
+| name | Groovy Training Helper  (System Party) |
+| party-ref | SYS00000000000000001 - SYS00000000000000001 |
+| port | 0 |
+| protocol | INVM |
+| token-auth | false |
+| transport-auth-required | false |
+
+end note
+note right of XJxTColqRkGuMaEgtUxepA_transformation
+| code | XJxTColqRkGuMaEgtUxepA |
+| classname | nl.jnc.gateway.message.ctrl.transform.GroovyTransformer |
+| copyrighted | false |
+| modifiable | true |
+| name | Groovy Training 16_OT_helpers (System Party) |
+| party-ref | SYS00000000000000001 - SYS00000000000000001 |
+| target-mimetype | application<U+002F>json |
+
+.. **dependencies** ..
+|<#gainsboro><r> HELPER_EXITPOINT | Exitpoint code:Groovy Training Helper  (System Party) | R23IYfxwRAWQ8nFcoRoDqg |
+
+end note
+note right of a6XNHuCNQSmh9Cd7i3jhdA_transformation
+| code | a6XNHuCNQSmh9Cd7i3jhdA |
+| classname | nl.jnc.gateway.message.ctrl.transform.FreeMarkerTransformer |
+| copyrighted | false |
+| modifiable | true |
+| name | Groovy Training invalid action (System Party) |
+| party-ref | SYS00000000000000001 - SYS00000000000000001 |
+| target-mimetype | text<U+002F>plain |
+
+
+end note
+note left of JeknivV6SGSWHmXZVCPsKQ_tunnel
+Tunnel #1
+| code | JeknivV6SGSWHmXZVCPsKQ |
+| modifiable | true |
+| party-ref | SYS00000000000000001 - SYS00000000000000001 |
+
+.. **Common** ..
+| audit-retention-fault | 4320days 15552000seconds |
+| audit-retention | 12days 43200seconds |
+| collect-proc-vars | false |
+| collect-stats | true |
+| duplicate-elimination | false |
+| encrypt-audit | false |
+| name | Groovy Training Helper  (System Party) |
+| collect-reliable | false |
+| res-async | false |
+
+.. **Protocol settings** ..
+| ack-requested | false |
+| async | false |
+| delay-proc | 0 |
+| interval-proc | 0 |
+| number-of-retries | 1 |
+| resent-response | false |
+| retry-period | 0 |
+
+.. **Identification** ..
+| transport-params-or | true |
+
+.. **runtime_vars** ..
+|<#gainsboro><r>#|name|value|metrics|predefined|proces-field|
+|<#gainsboro><r> 1 | action | transport:<U+002F><U+002F>action?none |  | <#PowderBlue><r> |  |
+end note
+' connectors
+Uz3NogDXRyeaSfpjeovj5g_entrypoint --> dYn7TV54ToO99zgRahGp7w1_tunnel :0
+b6gpn22lQS6m9wHZ9IwfOQ2_entrypoint --> dYn7TV54ToO99zgRahGp7w1_tunnel :0
+dYn7TV54ToO99zgRahGp7w1_tunnel --> u2b9ztgMQXarD5jIFDocYg_deliverypoint :0-0
+u2b9ztgMQXarD5jIFDocYg_deliverypoint --> pYqmPu80SViKKd4rfdPy6w1_profile :0-0
+pYqmPu80SViKKd4rfdPy6w1_profile --> kF7lkphJSbGWd2Tf8h2KjA3_expr :0-0-0
+kF7lkphJSbGWd2Tf8h2KjA3_expr --> vH318SYbRU2WaQ6J9r2rag2_transformation :0-0-0
+vH318SYbRU2WaQ6J9r2rag2_transformation --> EXPN000000000000000001_exitpoint :0-0-0
+kRkhpenARnmkGYPbHk4EQQ_transformation --> EXPN000000000000000001_exitpoint :dependency 0 - ep1 / 0-0-1
+pYqmPu80SViKKd4rfdPy6w1_profile --> CIvK1a2FQ2avFYtwWGl4fw_expr :0-0-1
+CIvK1a2FQ2avFYtwWGl4fw_expr --> kRkhpenARnmkGYPbHk4EQQ_transformation :0-0-1
+pYqmPu80SViKKd4rfdPy6w1_profile --> QLEGve7OTQSY9psijPCFWw_expr :0-0-2
+QLEGve7OTQSY9psijPCFWw_expr --> p3TTAgUKRCy36vLpIXXLXQ_transformation :0-0-2
+p3TTAgUKRCy36vLpIXXLXQ_transformation --> EXPN000000000000000001_exitpoint :0-0-2
+6AxyD5uhQ2eKDyDePUunuA1_transformation -[bold,#aaaaff]-> vPw3B7o8Qy2dGiyeWp8MmQ1_exitpoint :dependency 0 - HELPER_EXITPOINT
+pYqmPu80SViKKd4rfdPy6w1_profile --> Ks1bV7HJS7GI2gZqqjsFJg_expr :0-0-3
+Ks1bV7HJS7GI2gZqqjsFJg_expr --> 6AxyD5uhQ2eKDyDePUunuA1_transformation :0-0-3
+6AxyD5uhQ2eKDyDePUunuA1_transformation --> EXPN000000000000000001_exitpoint :0-0-3
+XJxTColqRkGuMaEgtUxepA_transformation -[bold,#aaaaff]-> R23IYfxwRAWQ8nFcoRoDqg_exitpoint :dependency 0 - HELPER_EXITPOINT
+R23IYfxwRAWQ8nFcoRoDqg_exitpoint -[bold,#6666ff]-> XOwwfe0bQfObKN1sxWYMww_entrypoint :0 INVM / 0
+pYqmPu80SViKKd4rfdPy6w1_profile --> yEdLKd3lR8qfvupi6l07Ow2_expr :0-0-4
+yEdLKd3lR8qfvupi6l07Ow2_expr --> XJxTColqRkGuMaEgtUxepA_transformation :0-0-4
+XJxTColqRkGuMaEgtUxepA_transformation --> EXPN000000000000000001_exitpoint :0-0-4
+pYqmPu80SViKKd4rfdPy6w1_profile --> JLIyU5gwRSeK3oIo2a2wQQ2_expr :0-0-5
+JLIyU5gwRSeK3oIo2a2wQQ2_expr --> a6XNHuCNQSmh9Cd7i3jhdA_transformation :0-0-5
+a6XNHuCNQSmh9Cd7i3jhdA_transformation --> EXPN000000000000000001_exitpoint :0-0-5
+XOwwfe0bQfObKN1sxWYMww_entrypoint --> JeknivV6SGSWHmXZVCPsKQ_tunnel :1
+JeknivV6SGSWHmXZVCPsKQ_tunnel --> CDNsi4inSweB6Q82cAPoRA_deliverypoint :1-0
+CDNsi4inSweB6Q82cAPoRA_deliverypoint --> vPw3B7o8Qy2dGiyeWp8MmQ1_exitpoint :1-0
+legend top left
+
+<img:https://otdoc.qrisonline.nl/images/cropped-logo.png>
+
+Template version:   2.1
+Exportfile:         configuration_20250129_154939.xml
+Opentunnel version: 5.3.0
+Generation date:    2025-01-29
+
+color legend:
+|<#eeeeff>		EntryPoints         	|
+|<#9bc43e>		Tunnels           	|
+|<#b4debe>		Async Tunnels  	|
+|<#bbffbb>		File Tunnels	|
+|<#ccccff>		Primary delivery point 	|
+|<#93c47d> #0 - Groovy Training (System Party)        |
+|<#93c47d> #1 - Groovy Training Helper  (System Party)        |
+
+
+end legend
+
+
+@enduml
