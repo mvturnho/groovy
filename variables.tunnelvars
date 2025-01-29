@@ -2,6 +2,8 @@
 #xpath OT3.0 style so always prefix with xpath:// never only //
 #With xslt template use xslt.transformer.factory=jdk|saxon|xalan; saxon is prefered, it is very actively developed and maintained
 
+exitpoint://EXITPOINT_CODE=POST:application/json:http://localhost:3003/exitpoint
+dependency://HELPER_EXITPOINT=exitpoint://EXITPOINT_CODE
 #definitions like xmlns:// header:// and mapping:// go here.
 
 

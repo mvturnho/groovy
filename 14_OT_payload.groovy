@@ -23,7 +23,7 @@ payloadObject = new JsonSlurper().parseText(payloadAsAttachment().data)
   The parseText method parses the JSON string into a Groovy object.
 */
 
-map = new HashMap()
+map = [:]
 
 
 // Iterate over each user in the parsed JSON object and print the UUID
