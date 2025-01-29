@@ -1,0 +1,6 @@
+fmg:
+  - name: run groovy
+    inputfile: input.json
+    outputfile: out.txt
+    varfile: variables.tunnelvars
+    validate: false
